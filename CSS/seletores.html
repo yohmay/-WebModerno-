@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        .tag {
+            color: #000000;
+            background-color:#10402f;
+        }
+        #primeiro {
+           background-color:#3d5e58;
+        }
+        #aprovados {
+            color:#000000;
+            background-color:#4e6f69;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #aninhado section {
+            background-color:#273135;
+        }
+        #aninhado span {
+            background-color:#4e6f69;
+        }
+        [feira]{
+            font-size: small;
+            background-color:#4e6f69;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        [feira*=escritorio]{
+            font-size: medium;
+            background-color:#4e6f69;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #aninhado > div {
+            background-color: #6f928b;
+        }
+        #primeiraDiv{
+            background-color: #6f928b;
+        }
+        section > :nth-child(even){
+        background-color:#3d5e58;
+        }
+        </style>
+</head>
+
+<body>
+    <div class='tag nolabel' >
+        <div class='tag nolabel' id="primeiraDiv" >
+            <p class='tag nolabel' id="primeiro">1</p>
+            <ul class='tag nolabel' feira='casa'>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+            <ul class='tag nolabel' feira='escritorio'>
+                <li>Café</li>
+                <li>Água</li>
+            </ul>
+            <ol id='aprovados' class='tag nolabel'>
+                <li>Maria</li>
+                <li>Pedro</li>
+                <li>Ana</li>
+            </ol>
+            <div id='aninhado' class='tag nolabel'>
+                <div class="tag nolabel">
+                    <section class='tag nolabel'>
+                        <span class='tag nolabel'>1</span>
+                        <p class='tag nolabel'>2</p>
+                        <span class='tag nolabel'>3</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>
