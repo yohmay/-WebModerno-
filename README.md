@@ -1,0 +1,23 @@
+Web Moderno completo com Javascript 2022 + Projetos. 
+
+- Seção 1: Introdução do Curso Desenvolvimento Web
+- Seção 2: Configurando o Ambiente
+- Seção 3: Iniciando com Programação
+- Seção 4: Javascript - Fundamentos
+- Seção 5: Javascript - Estruturas de Controle
+- Seção 6: Javascript - Função 
+- Seção 7: Javascript - Objetos
+- Seção 8: Javascript - Array
+- Seção 9: Javascript - Exercícios
+- Seção 10: Node
+- Seção 11: ESNext
+- Seção 12: Conceitos sobre Web
+- Seção 13: HTML
+- Seção 14: CSS
+- Seção 15: Integrando HTML, CSS e JS
+- Seção 16: Ajax
+- Seção 17: Gulp
+- Seção 18: Webpack
+- Seção 19: jQuery
+- Seção 20: Bootstrap
+- Seção 21: Projeto Galeria (Bootstrap/jQuery/Webpack)
