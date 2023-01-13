@@ -1,0 +1,87 @@
+Exportação de Arquivos: 
+module.exports = { } - Forma de atribuir novos atributos no módulo.
+this. - Referência utilizada para o Module.exports.
+exports. - Forma resumida para exportar. 
+module.exports. - Forma mais utilizada para exportação.
+
+Importação de Arquivos:
+require('../ ') - Onde é mencionado o módulo ou arquivo para ser importado.
+Sempre respeitar a forma de escrita do módulo caso tenha letras maiúsculas e minúsculas.
+require('../ ')() - Para executar uma função factory dentro de uma pasta importada, também para acrescentar os parâmetros entre parênteses.
+_ - Ter acesso ou referenciar um arquivo .
+
+req - Requisição 
+res - resposta
+globalThis. - Forma de declarar o objeto global.
+next() - Função responsável por executar a proxima função. 
+.inc() - Incrementação sobre o valor.
+.get() - Associação de uma propriedade ou objeto a uma função que será executada quando tal propriedade é acessada.
+Para algumas requisições será declarado a função middleware, que declarará os produtos na aplicação. 
+.listen() - É utilizada para vincular e ouvir as conexões no host e na porta especifica. 
+Ao final sera declarado uma requisição de execução que terá um callback para informar que o servidor conseguiu executar
+a comunicação com a porta declarada.
+.post() - Envia dados ao servidor, geralmente é enviada por meio de um formulário HTML e resulta uma alteração no servidor.
+.use() - Forma de requisição colocando o Middleware dentro de uma aplicação express.
+.send() - Forma de envio do servidor para o usuário. 
+.body() - É uma resposta da requisição para o servidor.
+.urlencoded() - Retorna uma função middleware.
+.put() - Substituição de produtos (chave e valores) a partir do id correspondente.
+
+getSeconds() - Método que retorna os segundos de uma data específica de acordo com o horário local.
+setTimeout() - Método que define um cronômetro que executa uma função ou trecho de código especificado assim que o
+cronômetro expirar.
+
+Json:
+Na área Scripts, sendo possível definir alguns scripts comandos para executar dentro da aplicação, sendo alguns
+pré definidos pelo node.
+Main - Comando que refere-se será o arquivo principal.
+Start - Executará a dependência informada a partir do momento que for executado o arquivo ou módulo, monitorando o 
+arquivo, caso ocorra alterações, será ajustado e executará com a versão atualizada.
+Dev - Terá a mesma funcionalidade do start.
+
+npm init - Comando para habilitar para definir como será o arquivo package.json
+npm init -y - Criação do arquivo package.json.
+npm i - Será utilizado para instalar as dependências necessárias para aplicação, e recriação da pasta node_modules
+npm i --save-dev dependência@versão - Permitirá que seja instalado a dependência com a versão que for escolhida.
+npm i --save dependência@versão -E - Instalará a versão exata, sem poder ter alterações.
+npm run - Para executar scripts definidos manualmente.
+npm start - Para executar a aplicação.
+
+Express - 
+Schedule - Módulo schedule recebe como parâmetro uma string de configuração no formato 'segundo minuto hora diaDoMês 
+mês diaDaSemana', que indica quando uma função será executada. Servirá para agendamento de tarefas.
+Nodemon - Biblioteca utilizada para mostrar a versão mais recente do código.
+RS - utilizado para mostrar novamente. "Refresh.
+
+const fs = require('fs'). - Para acessar o módulo do próprio node. Será procurado dentro dos módulos nativos do
+próprio node, caso não encontre será procurado dentro de node_modules. 
+require('../') - Leitura do arquivo em Json e converterá o arquivo em objeto.
+fs.readFileSync() - Leitura de um arquivo de forma sincrona.
+fs.readFile() - Leitura de um arquivo de forma assicrona.
+fs.readdir(__dirname (callback)) - Leitura do diretório, e com o callback mostrará todos os arquivos que a mesma
+contém.
+__dirname - É utilizado para obter o nome do arquivo ou o nome do diretório do arquivo atualmente em execução.
+
+fs.writeFile - É utilizado para gravar de forma assíncrona os dados especificados em um arquivo. Por padrão, o 
+arquivo seria substituído se existir. 
+
+process.argv - Lista de argumentos, declarada ao inicio do código. 
+process.stdout - Saída padrão de dados. 
+process.stdin.on - Evento que acontecerá a partir do momento que o usuário está passando dados e inserido com o enter.
+process.exit - Evento de saída, interrompendo caso não seja inserido nenhum dado. 
+
+Ajax:
+
+XMLHttpRequest - Objeto padronizado do JS, que fornece funcionalidades ao cliente para transferir dados entre um cliente e um servidor, de uma maneira fácil de recuperar dados de um
+URL sem ter que fazer uma atualização da página.
+xhr.onload - Evento que é acionado quando uma XMLHttpRequest transação é concluída com sucesso.
+xhr.open - Inicializa uma nova requisição ou reinicializa uma requisição já existente.
+xhr.status - Propriedade de leitura que retorna o código de status HTTP numérico da XMLHttpRequest resposta. 
+xhr.send - Envia uma requisição para o servidor.
+multer.diskStorage - Recebe um objeto e faz a configuração da pasta e arquivos, personalizando para salvar.
+xhr.onprogress - Evento que ocorre quando o navegador está baixando algum arquivo.
+fetch() - É uma função que possui retorno em promisses, podendo receber json e convertendo o mesmo para dados em html.
+
+
+$. - Representação do jQuery em uma função.
+
