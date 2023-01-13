@@ -1,0 +1,9 @@
+Git init - Inicialização do repositório no Github.
+Git add - Incluir alterações e adicionar novos arquivos. 
+Git commit - Adicionando com uma breve mensagem sobre o arquivo que está sendo commitado.
+Git status - Status do repositório e branch atual.
+Git branch - Ultizado com ramificações para ter um trabalho paralelo.
+Git checkout - Utilizado para troca de branch.
+Git push - Upload dos commits no repositório.
+
+Git ignore - Utilizado no arquivo VS para não ir para o repositório a pasta ou arquivo mencionado. 
