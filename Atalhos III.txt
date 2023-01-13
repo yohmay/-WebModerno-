@@ -1,0 +1,227 @@
+Gulp:
+
+Instalação:
+npm install gulp-cli -g
+npm install gulp -D
+npx -p touch nodetouch gulpfile.Js
+gulp --help 
+npm audit fix (Projeto SPA: Criando a Estrutura do Build. ) - Comando que permite fazer verificações de segurança.
+
+
+devDependencies:
+babel-core  
+babel-preset-env                  
+gulp-babel   - Integração do Gulp com Babel.      
+gulp-concat  - Serve para concatenar os arquivos. 
+gulp-sass    - Pré processador CSS, plugin que intrega o Gulp com Sass
+gulp-typescript  - Plugin que integra o Gulp com TypeScript.
+gulp-uglify - Fará com que um arquivo JS vire um arquivo dentro de somente uma linha de código. Sem espaços e reduzindo o máximo possível.
+gulp-uglifycss - Sendo a mesma utilidade que o uglify porém apenas com CSS.
+typescript - Dependência própria do typescript.
+
+gulp - Inicialização no Terminal.
+
+module.exports.default - Será definido o workflow que será utilizado nas funções.  
+parallel() - Combina funções de tarefas ou operações compostas que serão executadas simultaneamente. Não possuindo na profundidade de aninhamento de operações
+compostas usando series()e parallel().
+gulp.src() - Seleciona os arquivos que serão utilizados como entrada para o workflow que está sendo definindo.
+ .pipe() - Função que transformará ou aplicar transformações nos arquivos que são definidos.
+gulp.dest - Coloca os arquivos definidos em um outro local a ser declarado. 
+babel() - O babel é um transpilador para converter o código antigo e gerar, um novo código em JS.
+ comments: - Não colocará os comentários feitos no código. 
+ presets: ["env"] - Módulo especial que compilará o código para uma versão anterior do ECMAScript caso o recurso que está sendo utilizado não seja suportado pelo browser.
+uglify() - Não é necessário passar nenhum parâmentro, fará com que o código seja minificado.
+concat() - Os arquivos serão concatenados na ordem em que forem especificados nos parâmetros.
+.pipe - Realiza chamada de funções passando a saída de uma função para a entrada de outra. 
+collapseWhitespace - Retira os espaços em branco.
+
+TypeScript:
+dir - Executando no terminal mostra os diretórios que a pasta possui.
+
+Instalar dependências do capítulo (rascunho)
+npm i --save-dev babel-core
+npm i --save-dev babel-preset-env
+npm i --save-dev gulp
+npm i --save-dev gulp-babel
+npm i --save-dev gulp-concat
+npm i --save-dev gulp-sass
+npm i --save-dev node-sass
+npm i --save-dev gulp-typescript
+npm i --save-dev gulp-uglify
+npm i --save-dev gulp-uglifycss
+npm i --save-dev typescript
+
+Webpack:
+
+webpack.js.org
+entry: - Propriedade que será utilizada no arquivo de configuração do webpack que irá indicar qual o módulo que deverá ser usado para dar início
+loaders - Interpreta e permite gerenciar arquivos que não são Javascript.
+webpack.config.js - Arquivo sendo interpretado pelo NodeJS, onde será feita a configuração do script do webpack.
+mode: - Fornece a opção de configuração, informando para utilizar as otimizações internas de acordo, tendo as opções: 'production', 'development'. 
+output: {} - Serve para definir o nome e o local onde o módulo será enviado após a execução.
+rules: [{}] - Define um conjunto de testes de caminho de arquivo e carregadores que devem ser usados quando um recurso que corresponda ao teste for encontrado
+mini-css-extract-plugin - Extrai o arquivo CSS para um arquivo específico em JS.
+npm run build - Executará a build configurada no webpack.
+
+Depêndencias Webpack (rascunho)
+npm i --save-dev cross-env
+npm i --save-dev optimize-css-assets-webpack-plugin
+npm i --save-dev uglifyjs-webpack-plugin
+npm i --save-dev css-loader
+npm i --save-dev mini-css-extract-plugin
+npm i --save-dev node-sass
+npm i --save-dev sass-loader
+npm i --save-dev style-loader
+npm i --save-dev webpack
+npm i --save-dev webpack-cli
+npm i --save-dev webpack-dev-server
+npm i --save-dev file-loader
+
+
+jQuery:
+.hide - Evento utilizado para ocultar conteúdo com jQuery.
+.show - Evento show é utilizado para apresentar conteúdo que está oculto com jQuery.
+.fadeOut - Oculta os elementos correspondentes tornando-os transparentes.
+.get - Para que seja visivel os elementos correpondentes na DOM.
+$.isEmptyObject() - Função que é utilizada para verificar se o objeto está vazio
+jQuery.inArray - Procura um valor especificado dentro de um array e retorna seu índice.
+$.fn - É possível criar plugins, extendendo as funcionalidades com suas próprias funções.
+.addClass - Adiciona a classe, anexando-a a qualquer uma que já possa estar sendo atribuída aos elementos. Mais
+de uma classe pode ser adicionada ao mesmo tempo, separadas por um espaço
+.removeClass -  Método para remover a classe específica de um elemento.
+Exemplos de filtros próprios do jQuery:
+        $('li:first') - Seleciona o primeiro elemento de uma tag declarada.
+        $('li:odd') - Seleciona todos os elemento que estão em índices ímpares de uma tag declarada.
+        $('li:gt(1)') - Seleciona o índice maior que o índice mencionado entre ().
+        $('li:not(:last) - Seleciona qualquer elemento menos o último de uma tag declarada.
+        $('li:contains("r")') - Seleciona o elemento que possuí a string mencionada em ("").
+        $('form *') - Seleciona todos os elementos de um formulário.
+        $('form:text') - Seleciona os elementos do tipo texto.
+        $('form:password') - Seleciona os elementos do tipo password.
+        $('form:checkbox') - Seleciona os elementos do tipo checkbox.
+        $('form:radio') - Seleciona os elementos do tipo radio.
+        $('form:file') - Seleciona os elementos do tipo file.
+
+.prev() - Retorna o elemento irmão anterior do elemento selecionado.
+.parent() - Método que percorre o pai imediato de um elemento na árvore DOM e constrói um novo objeto jQuery a partir dos elementos correspondentes.
+.next() - Método que permite pesquisar o elemento seguinte. 
+.css() - Método utilizado para manipulação do CSS.
+.parentsUntil() - Método que percorre os ancestrais desses elementos até atingir um elemento correspondente ao seletor mencionado.
+.children() - Utilizado para encontrar todos os elementos filhos relacionados aquele elemento selecionado.
+.find() - Método que serve para encontrar elementos descendentes dos selectores especificados.
+.each() - Função utilizada para iterar um conjunto de elementos.
+$('<li></li>).append() - Adiciona o elementos a uma tag referenciada.
+.prepend() - Insere o conteúdo especificado no início dos elementos selecionados.
+.appendTo() - Método que um elemento é selecionado e inserido, cuja a identificação á passada como parâmentro.
+.prependTo() - Método para inserir elementos HTML no início do elemento selecionado.
+.insertBefore() - Insere elementos HTML antes dos elementos selecionados.
+.insertAfter() -  insere elementos HTML depois dos elementos selecionados.
+.replaceWith() - Método que substitui os elementos selecionados por um novo conteúdo.
+.replaceAll() - Método que substitui todos os elementos selecionado por novos elementos declarados.
+.wrap() - Método que agrupa os elementos HTML especificados em torno de cada elemento selecionado.
+.wrapAll() - Mesma funcionalidade do wrap, porém agrupando todos os elementos.
+.empty() - Método que remove todos os nós filhos e o conteúdo dos elementos selecionados. 
+$(document).ready - Função que será executada quando a página da DOM estiver pronta para execução do JS.
+.hasClass() - Método que verifica se algum dos elementos selecionados possui um nome de classe mencionada.
+.toggleClass() - Método que alterna entre adicionar e remover um ou mais nomes de classe dos elementos selecionados.
+.on() - Função que registra um evento no jQuery.
+mousemove - Evento que representa a movimentação do mouse.
+mouseover - Evento que ocorre quando o ponteiro do mouse está sobre o elemento selecionado.
+.off() - Remove os manipuladores de evento anexados ao método on().
+mouseleave - Evento que ocorre quando o ponteiro do mouse sai do elemento selecionado.
+.click() - Aciona o evento click ou anexa uma função para ser executada quando ocorre um evento click.
+. O evento keyup ocorre quando uma tecla do teclado é liberada.
+.keyup() - Método que aciona o evento keyup ou anexa uma função para ser executada quando ocorre um evento keyup.
+.match() - Método compara uma string com uma expressão regular, retorna um array com as correspondências e  retorna null se
+nenhuma correspondência for encontrada.
+.hover() - Especifica as funções a serem executadas quando o ponteiro do mouse passa sobre os elementos selecionados.
+.one() - Aumenta o tamanho do elemento e seu texto, passando com o ponteiro do mouse ou ao clicar no elemento.
+.dblclick() - Evento que ocorre quando um elemento é clicado duas vezes.
+.fadeIn() - Altera gradativamente a opacidade, para elementos selecionados, de oculto para visível.
+$(window).resize - Método que aciona o evento de redimensionamento ou anexa uma função a ser executada quando ocorre um evento de redimensionamento.
+e.target.selectionStart - Índice de inicio da seleção.
+e.target.selectionEnd - Índice de fim da seleção.
+e.target.value.substring - Mostrará o resultado da seleção da substring.
+e.relatedTarget - Retorna qual elemento está sendo inserido ou encerrado com o movimento do mouse.
+which - Mostará qual a tecla pressionada do teclado ou o clique do ponteiro.
+.toggle() - Alterna entre hide() e show() para os elementos selecionados.
+.fadeToggle() - Alterna entre os métodos fadeIn() e fadeOut().
+.slideToggle() - Alterna entre slideUp() e slideDown() para os elementos selecionados.
+.slideUp() - É ultilizado para deslizar um elemento para cima.
+.slideDown() - É ultilizado para deslizar um elemento para baixo.
+.animate() - É utilizada para criação de animações personalizadas. 
+RegExp() - Construtor cria um objeto de expressão regular para combinar texto com um padrão.
+.toISOString() - Retorna um objeto de data como uma string, usando o padrão ISO.
+.getTime() - Retorna o número de milissegundos desde 1º de janeiro de 1970 00:00:00.
+
+
+Bootstrap:
+Reboot - Torna consistente o estilo entre diferentes browser!
+Rems - Baseado no raiz
+Evita margin-top - Provavelmente será necessário adicionar algum espaço
+box-sizing border-box
+Fontes nativas
+m - Margin      p - Padding
+t - Top         e - End
+b - button      s - Start
+x - Eixo X      y - Eixo Y 
+l - Left        r - Right
+auto - Preenchimento automático.
+. Os valores pré definidas pelo Bootstrap serão de 0 a 5.
+sm - Small (Pequeno)
+md - Medium (Médio)
+lg - Large (Grande)
+xl (Extra Grande)
+.col- - Extra pequeno <576px	
+.col-sm- - Pequeno ≥576px	
+.col-sm- - Médio ≥768px	
+.col-lg- - Grande ≥992px	
+.col-xl- - Extra grande ≥1200px
+img-thumbnail - Acrescenta uma borda arredondada de 1px na imagem.
+img-fluid - Redimensiona a imagem de acordo com o tamanho da página ou dispositivo.
+w-100 - Classe dentro de uma div vázia para efetuar a quebra de linha.
+.order-classes para controlar a ordem visual do conteúdo. Essas classes são responsivas, portanto, podem ser definidas com o order ponto de
+interrupção, por exemplo: .order-1.order-md-2
+.progress - Utilizado como um wrapper para indicar o valor máximo da barra de progresso.
+.progress-bar - Utilizado para indicar o progresso até agora. Possuindo um estilo embutido, classe de utilitário ou CSS
+personalizado para definir sua largura.
+
+Projeto final:
+CopyWebpackPlugin - Plugin que realiza a cópia de arquivos html e imagens para diferentes tipos de pastas. Mantendo a mesma organização em
+
+Atalhos devDependencies:
+"bootstrap": "4.1.1",
+"copy-webpack-plugin": "4.5.1",
+"cross-env": "5.1.5",
+"css-loader": "0.28.11",
+"file-loader": "1.1.11",
+"font-awesome": "4.7.0",
+"jquery": "3.3.1",
+"mini-css-extract-plugin": "0.4.0",
+"node-sass": "4.9.0",
+"optimize-css-assets-webpack-plugin": "4.0.1",
+"popper.js": "1.14.3",
+"postcss-loader": "2.1.5",
+"sass-loader": "7.0.1",
+"style-loader": "0.21.0",
+"uglifyjs-webpack-plugin": "1.2.5",
+"webpack": "4.8.3",
+"webpack-cli": "2.1.3",
+"webpack-dev-server": "3.1.4"
+
+Sites:  
+gulpjs.com
+babeljs.io
+typescriptlang.org
+sass-lang.org
+regex101.com - A partir da expressão verifica qual arquivo poderá ser encontrado.
+https://www.npmjs.com/package/node-sass
+https://jquery.com/ - Site para instalação das versões do jQuery.
+https://releases.jquery.com/ - (CDN) Importando o jQuery, através de uma referência via JS.
+https://getbootstrap.com/ - Site Bootstrap.
+https://www.creative-tim.com/ - Site de Templates para Bootstrap
+https://wrapbootstrap.com/ - Site de Templates para Bootstrap
+https://auto--animate-formkit-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc - Animações jQuery
+https://bigheads.io/ - Animações jQuery
+https://animatedbackgrounds.me/ - Animações jQuery
+https://10015.io/ - Animações jQuery
