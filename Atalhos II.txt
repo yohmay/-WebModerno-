@@ -1,0 +1,400 @@
+http-server -p 9090 - Executará em outra porta dependendo da porta indicada.
+
+HTML:
+
+Corpo do Documento HTML:
+<> - Definição de uma Tag.
+<tag> - Abertura da Tag.
+</tag> - Fechamento da Tag.
+<!-- --> - Para realizar um comentário.
+<tag /> - Para tag sem corpo.
+
+<!DOCTYPE html> - Utilizando o HTML versão 5.
+<html> </html> - Para iniciar o código em html.
+<head> </head> - Elementos não visuais com exceção do título, tags de metadados, importar arquivos javascript, importar css, entre outros 
+arquivos externos.
+<title> </title> - Título da página.
+<body> </body> - Sendo o corpo da página onde é realizado a organização da mesma, contendo outras tags.
+<header> </header> - Representa um grupo de suporte que faz a introdutório ou navegacional, podendo conter também outros elementos como um logo, 
+cabeçalho, formulários, pesquisas, entre outros. 
+<nav> </nav> - É uma seção de uma página que encaminha para outra página ou para outras áreas da página, ou seja uma seção de com links de 
+navegação.
+<section> </section> - Serve para definir uma seção em um documento, possuindo sempre um título com poucas exceções. 
+<footer> </footer> - Representa o rodapé para o conteúdo de seção ou seja o rodapé do section mais próximo. 
+<meta> </meta> - Definição de qual caractere será utilizado na página. O mais utilizado é o UTF-8.
+<article> </article> - Elemento que representa uma composição independente em um documento, página, aplicativo ou site, que se destina a ser distribuído. 
+<aside> </aside> -  Representa uma seção de uma página que consiste o conteúdo que atinge relacionando ao conteúdo do seu entorno.
+<details> </details> - Cria um widget de divulgação no qual as informações são visíveis apenas quando o widget é alternado para um estado "aberto". Utilizado para mostrar detalhes 
+quando acrescentado.
+<input> </input> - É utilizado para criar controles que interação, para formulários baseados na web para receber dados do usuário. 
+<a href=""> </a> - Elemento âncora, com atributo que cria-se uma hiperligação nas páginas web, arquivos, endereços de e-mail, ligações na mesma página ou
+endereços na URL.
+<div> </div> - Utilizado para criar áreas ou divisões para colocar um agrupamento de elementos dentro de uma tag, podendo aplicar estilos. Aplicado em blocos. 
+<span> </span> - Utilizada para criar um destaque ou um estilo diferente, aplicado em linhas. 
+
+Imagens e Vídeos:
+<img> - Utilizado para inserir imagens no documento, sendo implementado também pelo HTML5 para uma melhor experiência com o elemento.
+<picture> </picture> - Utilizando para especificar múltiplos elementos, na tag <source> para um elemento específico. O navegador irá escolher 
+a imagem mais adequada de acordo com o layout atual da página, caracteristicas do dispositivo em que será exibido.
+<source> </source> - O elemento é utilizado para especificar múltiplos recursos de mídia de elementos <picture>, <audio> ou <video>. Sendo um
+elemento vazio. É normalmente usado para disponibilizar múltiplos formatos suportado em diferentes browsers. 
+<video> </video> - Elemento utilizado para inserir conteúdo de vídeo em um html.
+controls - Propriedade que será mostrado ao usuário os controles de vídeo, dando acesso ao play, andamento do vídeo, volume, tamanho
+de tela e opção para download.
+autoplay - Propriedade que quando o usuário entre na página automaticamente o vídeo inicia.
+
+Para Textos:
+<h1> </h1> - Cabeçalho que traz ao texto que está dentro dele tenha a maior relevância dentro da página. Contém seis níveis de cabeçalho, alterando os tamanhos de visibilidade.
+<p> </p> - Utilizados para marcar os Paragráfos.
+<b> </b> - Tag para colocar um texto em negrito.
+<i> </i> - Tag para colocar um texto em itálico. 
+<sup> </sup> - Tag para colocar o texto sobrescrito.
+<sub> </sub> - Tag para colocar o texto subscrito.
+&nbsp; - Para determinar espaços em branco.
+<span class="3"> </span> - Tag que determina os espaços em branco e a partir da class é informado quanto será o espaço.
+<br> </br> - Tag para quebra de linha ao inserir o texto entre a tag, antes e depois.
+<hr/> - Tag para inserir uma quebra temática sendo uma linha na página.
+<strong> </strong> - Utilizada para marcar como alerta, sendo uma marcação semântica em um determinado texto.
+<em> </em> - Marca o texto que tem ênfase, aninhado com cada nível de aninhamento indicando um grau maior de ênfase.
+<blockquote> </blockquote> - Utilizado para fazer citações longas, usando referências.  
+<q> </q> - Tag para citações porém citações curtas. 
+<abbr> </abbr> - Representa abreviação fornecendo uma descrição completa.
+<cite> </cite> - Faz referência a uma obra ou trabalho artístico. Incluido junta com a tag de abreviação.
+<dfn> </dfn> - Marcação de uma definição sobre o termo dentro de um paragráfo ou uma seção.
+<address> </address> - Utilizada para referênciar um endereço, podendo incluir qualquer tipo de informação de contato, como URL, e-mail, telefone, mídia
+social. 
+<del> </del> - Faz uma remoção da parte do texto inserido entre a tag.
+<ins> </ins> - Representa uma parte do texto que está sendo inserida.
+<s> </s> - Renderiza um texto com uma linha cortando o texto, utilizado para representar textos que não sejam relevantes ou que não estejam corretos. 
+
+Listas:
+<ol> </ol> - Utilizada para criar listas ordenadas, ou seja um Order List.
+<li> </li> - Tag para inserir os itens dentro de uma lista, independente se for uma lista ordenada ou não ordenada.
+<ul> </ul> - Utilizada para criar listas não ordenada.
+<dl> </dl> - Utilizada para criar listas que possuem pares de termos e descrições. Uso muito comum para implementar um glossário
+ou exibir metadados, possuindo uma lista de pares chave e valor.
+<dt> </dt> - Identifica um termo na lista de definição, ocorrendo somente em um elemento por item dentro de <dl>
+<dd> </dd> - Fornece os detalhes ou uma definição completa do termo definido por <dt>.
+
+Tabelas:
+<table> </table> - Tag que define uma tabela.
+<caption> </caption> - Representação da tabela. 
+<thead> </thead> - Define um conjunto de linhas definindo a cabeça das colunas da tabela.
+<tr> </tr> - Elemento que define uma fileira de células em uma tabela. As células podem ser estabelecidas usando uma mistura de elementos <td> (Célula de Dados) 
+e <th> (Célula de Cabeçalho).
+<td> </td> - Definição de uma célula de uma tabela que contém dados.
+<th> </th> - Cabeçalho de um grupo de células de uma tabela, definida pelos atributos de escopo e cabeçalho.
+<tbody> <tbody> - Elemento que encapsula um conjunto de linhas de uma tabela indicando que compõem o corpo da tabela. 
+<tfoot> </tfoot> - Conjunto de linhas resumindo as colunas da tabela.
+
+Formulários:
+<form> </form> - Será uma seção de um documento que contém controles interativos que permitem ao usuário submeter informação a um determinado servidor web.
+<input> </input> - Criação de controles interativos para formulários na web para receber dados do usuário. 
+<button> </button> - Representa um botão clicável.
+<option> </option> - Utilizado para criar um controle que representa um item dentro de um elemento.
+
+Atributos e Propriedades:
+type="" - Propriedade informando o tipo. 
+value="" - Propriedade referente ao valor.
+action="" - Ação de um formulário, é o programa que é executado no servidor quando o formulário é enviado, podendo ser alterada ou definida.
+method="" - Define um conjunto de métodos de solicitação para a ação ser executada em um determinado recurso, solicitação podendo ser segura, e armazenável em cache.
+="_blank" - Será aberto outra guia do navegador não saindo da url atual, ao inseri-lo.
+colspan="0" - Propriedade que ocupa mais de uma coluna em uma tabela.
+border="0" - Estabelece uma borda de um elemento, sendo possível definir largura, estilo e cor.
+href="www" - Define um link para recurso como uma URL de referência.
+type="radio" - Botão de escolha, utilizando o atributo value definindo o valor a ser enviado ao back-end.
+type="checkbox" - Caixa de marcação definindo um valor a ser enviado ao back-end.
+formaction="" - Propriedade responsável por determinar a url e action na tag button declarada. 
+formmethod="" - Propriedade relacionada ao método do botão. 
+src="" - Será o endereço a fonte da imagem inserida a partir da tag img.
+alt="" - Propriedade relacionada para exibir uma mensagem caso a imagem não seje visível.
+width="" - Propriedade relacionada a altura da imagem.
+height="" - Propriedade relacionada a largura da imagem.
+controlsList="" - Propriedade que receberá o atributo que não será incluido na barra de controle do vídeo. 
+
+Extras:
+Ctrl + Shift + V -  Mostrará o preview do HTML - Utilizando a extensão Preview. 
+Ctrl + Space - Mostrará as propriedades do CSS e suas funcionalidades
+.MencionandoAClass - Para aplicar CSS em uma Class, será mencionada a partir de um .
+#MencionarUmId - Para aplicar CSS em um id, será mencionada a partir de #.
+.classList - Propriedade que realiza a leitura e retorna uma coleção DOMTokenList, ativa dos atributos de classe do elemento.
+document.createElement - Cria um elemento HTML especificado a partir de um código JS.
+e.preventDefault() - Váriavel que recebe o evento do click, prenvenindo que a navegação ocorra.
+document.getElementById('conteudo') - Retorna a referência do elemento atráves de seu ID.
+document.querySelectorAll('[marcação]') - Seleciona todos os elementos com a propriedade marcada. 
+fetch() - Função recente baseada em promisse que fará uma requisição Ajax.
+.innerWidth - Propriedade que retorna a largura interna da janela em pixels. Isso inclui a largura da barra de rolagem vertical, se houver.
+Array.from() - Método que cria uma nova instância de um Array quando for passado um array-like ou um iterable object como argumento.
+.oncontextmenu - Propriedade do manipulador de eventos da janela para eventos com o botão direito do mouse. Caso seja false, o usuário não tem acesso com o click direito do mouse.
+
+CSS:
+@import - É utilizado para importar regras de estilos de outras folhas de estilo, a regra deve preceder em todos os outros tipos de regras.
+
+Extensão do Google: Grid Ruler.
+https://caniuse.com/#feat=css-grid - Estatística de como diferentes tipos de browser suporta.
+https://fonts.google.com/ - Fontes, para utilizar nos exemplos e exercícios.
+https://specificity.keegan.st/ - Calculadora que calcula a especificidade dos componentes do CSS.
+https://mybrandnewlogo.com/pt/gerador-de-paleta-de-cores - Paleta de Cores.
+https://www.w3schools.com/colors/colors_hsl.asp - Paleta de Cores.         
+https://coolors.co/ - Paleta de Cores.
+http://paletton.com/ - Paleta de Cores.
+
+Content - Conteúdo que está sendo trabalhado.
+Padding - Espaçamento que não é obrigatório a ser informado todas as dimensões.
+Border - Borda, podendo ser ou não aplicada.
+Margin - Margem será o espaçamento entre os componentes.
+
+* - Seletor padrão, aplicando a uma determinada propriedade a todos os 
+elementos. 
+ELEM - Utilizando o próprio elemento para aplicar estilos, por exemplo, dentro 
+de uma tag div, h1, entre outros. 
+.class - Seletor class que é possível reutilizar em outros elementos que são da 
+mesma class, aplicando uma class em uma tag. A class é uma propriedade muito 
+específica sendo projetado para ser um dos caminhos mais seguros.
+#ID - Seleciona os elementos a partir de um ID.
+[Atrib] - Seletor a partir de um Atributo, que também é possível aplicar 
+estilos com CSS.
+:pseudo-class - Seletor que especifica um estado especial do elemento 
+selecionado.
+:pseudo-elementos - É um seletor que permite que seja estilizado uma parte 
+específica do elemento selecionado.
+inherit - Para herdar uma propriedade que não vem por padrão por herança.
+!important - Regra utilizada na declaração de estilo que substitui qualquer outra declaração feita no CSS. Não é uma especificidade mas a ultrapassa, então não é recomendado ser utilizado.
+
+color - Propriedade para aplicar cor podendo ser com códigos ou até mesmo pelo nome.
+background-color - Propriedade que define a cor de fundo de um elemento.
+
+letter-spacing - Propriedade que define o comportamento do espaço horizontal entre os caracteres de texto.
+word-spacing - Define o comprimento do espaço entre palavras e entre tags.
+line-height - Define a altura de uma caixa de linha. Normalmente utilizado para definir a distância entre as linhas de texto.
+
+text-align - Alinhamento do texto ou frase, com valores pré-definidos.
+text-transform - Propriedade que especifica como capitalizar o texto de um elemento. Possuindo valores:
+text-transform: capitalize - Converte a primeira letra de cada palavra em maiúscula.
+text-transform: uppercase - Converte todos os caracteres em maiúscula.
+text-transform: lowercase - Converte todos os caracteres em minúsculos.
+text-transform: none - Impede que todas as maiúsculas e minúsculas de todos os caracteres sejam alterados. 
+
+font-weight - Intensidade da fonte, faz com que o elemento selecionado fique definido conforme o valor informado. 
+font-family - Lista de prioridades de familias de fontes e/ou nomes genéricos de fontes a serem especificadas para um elemento selecionado.
+font-size -  Propriedade relacionada ao tamanho da fonte, podendo ser associada a números. 
+font-size: 1em; - Esse valor faz com que a fonte tenha um tamanho padrão.
+font-size: 100%; - O uso desse valor faz com que a fonte que permaneça no valor declarado.
+font-size: 16px; - Valor fixo declarado em pixels 
+font-size: 12pt; - Valor de pontos que é equivalente a 16px e também e equivalente a 100%.
+
+position - Recurso utilizado para ordenar os elementos HTML de uma página web.
+position: static - O elemento será posicionado de acordo com o fluxo normal do documento, propriedades top, right, bottom, left e z-index não possuem efeitos, tornando o valor padrão.
+position: relative - O elemento será posicionado de acordo com o fluxo normal do documento e será deslocado em relação a base de valores de top, right, bottom e left.
+position: absolute  -  O elemento é removido do fluxo normal de documentos e nenhum espaço é criado para o elemento no layout da página. Posicionando ao seu ancestral mais próximo, se 
+houver relação, caso contrário é colocado em relação ao bloco contendo inicial, definido em sua posição final pelos valores de top, right, bottom e left. 
+position: fixed - O elemento é removido do fluxo normal de documentos e nenhum espaço é criado para o elemento no layout da página, sendo posicionado em relação ao bloco estabelecido pelo 
+viewport inicial, exceto quando seus ancestrais possuem uma propriedade transform, perspctive ou filter definido como algo diferente de none. 
+position: sticky - Elemento que é posicionado de acordo com o fluxo normal do documento e, em seguida, deslocado em relação ao ancestral de rolagem mais próximo e contendo bloco. 
+border - Borda aplicada permitindo separar um espaço do layout de uma página, definindo onde vai aparecer.
+border-radius - Propriedade que arredonda os cantos da borda externa de um elemento. 
+width - Determina a largura da área de conteúdo de um elemento selecionado.
+height - Determina a altura da área do conteúdo de um elemento.
+top - Propriedade que indica um espaço acima do elemento.
+margin - Propriedade que define a área de margem nos quatro lados do elemento.
+margin-left - Define as dimensões da margem esquerda.
+margin-right - Define as dimensões da margem a direita.
+vertical-align - Alinhamento vertical de um elemento html.
+padding - Define a distância entre o conteúdo de um elemento e suas bordas.
+
+box-shadow - Adiciona efeitos de sombra ao redor do quadro de um elemento. 
+box-sizing: content-box - O padding e a border não serão considerados para gerar o box, então o tamanho será definido pelo conteúdo apenas.
+box-sizing: border-box - As propriedades de width e height incluem o tamanho do padding e a border, Fazendo com que seja gerado o box com a borda e o conteúdo do tamanho informado 
+sem ultrapassar.
+
+overflow: hidden - O conteúdo que ficará de sobra será cortado e nenhuma barra de rolagem é exibida. Então além do conteúdo do espaço destinado nada será exibido.
+overflow: scroll - Será acessível o conteúdo, através de uma barra de rolagem que será exibida mesmo que o conteúdo não precise, evitando problema de barra de rolagem aparecendo e 
+desaparecendo quando o conteúdo for dinâmico. (Ao imprimir o conteúdo pode vir a ser vazado).
+overflow-x: scroll - Define o que é exibido quando o conteúdo transborda das bordas esquerdas e direita de um elemento de nível bloco. 
+overflow-y: scroll - Definido quando o conteúdo exibido transborda bordas superiores e inferiores de um elemento.
+
+float - Determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquedo do seu containêr, então os textos e elementos em linha 
+irão se posicionar ao seu redor.
+float: right - Define os conteúdos para direita.
+float: left - Conteúdos serão definidos para esquerda.
+clear: - Atributo que define as bordas de um elemento que não serão aceitos outros elementos posicionados por float, definindo então quais serão as bordas que ficará livre na 
+distribuição visual dos elementos.
+
+display: none - Retira o elemento do layout da página.
+display: inline - Faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.
+display: block - Define um bloco contendo um espaço em branco tanto em cima como embaixo e não permite outros elementos ao lado, exceto quando tiver sido declarado ao contrário.
+display: list-item - É exibido com as características de um item de uma lista, podendo ser utilizado em conjunto com as propriedades list-style-type e list-style-position.
+display: inline-block - Um bloco inline, ou seja, na mesma linha do conteúdo adjacente. Mas comporta-se como um bloco.
+display: inline-table - Valor não possui um mapeamento direto no HTML, comporta-se como uma table elemento, mas como uma caixa embutida ao invés de uma caixa nível do bloco.
+display: table - Faz com que o elemento tenha um comportamento bem semelhante a de uma tabela com tag table.
+display: table-cell - Os elementos terão comportamento semelhante a células de uma table.
+display: table-column - Elementos se comportam como uma coluna correspondente a uma table.
+display: table-column-group - Definem os elementos como um grupo de colunas em uma table.
+display: table-footer-group - Elementos serão definidos como um conjunto de linhas as quais serão o rodapé.
+display: table-header-group - Elementos que definem um conjunto de linhas para o cabeçalho.
+display: table-row - Definem os elementos em linhas de células de uma table.
+display: table-row-group - O elemento encapsula um conjunto de linhas de uma tabela, indicando que as mesmas compõem o corpo.
+display: flex - Elementos se comportam como um elemento de bloco e apresenta seu conteúdo de acordo com o modelo flexbox.
+display: inline-flex - O elemento tem o comportamento como um elemento embutido e apresenta seu conteúdo de acordo com o modelo flexbox.
+display: grid - Define os elementos como grade. 
+display: inline-grid - Comportamento do elemento será embutir e apresentar o seu conteúdo dee acordo com o modelo grade.
+display: run-in - Caso a caixa de entrada tiver uma caixa de bloco. | Se uma caixa de bloco segue a caixa de introdução, a caixa de introdução torna-se a primeira caixa embutida 
+do bloco. | Caso uma caixa embutida se seguir, a caixa de instrução se tornará uma caixa de bloco.
+display: inherit - O elemento não fará parte de um herança.
+
+display: flex - Elementos se comportam como um elemento de bloco e apresenta seu conteúdo de acordo com o modelo flexbox.
+Main Axis - O principal eixo a ser trabalhado podendo ser linha ou uma coluna.
+Cross Axis - Eixo secundário ou alternativo. 
+Main Size - Sendo o tamanho do Main Axis.
+Main Start | Main End - Os flex itens são inseridos começando pelo Main Start atpe chegar ao Main End. 
+Cross Size - Mesmas funções do main size.
+Cross Start | Cross End - Mesma função do main start e main end.
+Main Dimension - Será a altura e a largura dos flex items.
+Flex Contênier - Tem o objetivo de agrupar e armazenar dentro os flex itens.
+Flex Item - Será transformados os items após ser declarado com display.
+flex-direction - Define os itens flexíveis, colocando no contênier flexível, definindo o eixo principal e a direção, definidas como:
+row | row-Reverse - Valor que se refere a linha, sendo eixo principal moverá ao longo da linha todos os flex items na direção inline.
+column | column-Reverse - Valor que se refere a coluna, e o eixo sendo principal se moverá do topo até o fim da página na direção block.
+flex-wrap - Define se os itens flexíveis serão forçados a ficarem na mesma linha ou se podem ser quebrada em varias linhas. Caso seja valido, os define 
+na direção em que as linhas são empilhadas. 
+wrap - Os itens flexíveis será quebrado em multiplas linhas.
+nowrap - Os itens flexíveis serão agrupados em uma única linha, podendo fazer com que o flex conteiner transborde. 
+wrap-reverse - Comporta-se da mesma maneira que o wrap, mas a de linha ocorre na direção contrária, ou seja, para a linha acima.
+flex-flow - Propriedade que é a junção das propriedades flex-direction e flex-wrap. 
+justify-content - Propriedade que serve para alinhar os elementos ao longo do eixo principal, cuja a direção é definida a partir da propriedade flex-direction.
+flex-star - Valor que alinhara os elementos rente à borda esquerda do conteiner.
+flex-end - Resulta em um alinhamento oposto ao flex-start.
+center - Alinha os itens ao centro.
+space-between - Utilizado para ocupar todo o espaço livre após a disposição dos itens e dividí-lo igualmente entre os itens. 
+space-around - Gera uma quantidade igual de espaços à direita e à esquerda.
+align-items - Propriedade que é utilizada para centralizar e alinhar os itens.
+stretch - Controla o alinhamento do eixo transversal.
+baseline - Os itens são alinhados a partir da base da primeira linha de texto de cada um.
+align-content - Propriedade que alinha as linhas de um contenier flex quando há espaço extra no eixo cruzado, ou seja, não tem efeito algum dentro dos itens 
+de uma única linha.  
+order - Define a ordem para colocar um item em um conteiner flexível ou de grade, são classificado por valor de ordem crescente, e em seguida pela ordem do código-fonte.
+align-self - Propriedade que estabelece o alinhamento de um certo item dentro do bloco que o contém, em Flex Box controla o alinhamento dos itens em Cross Axis.
+flex-grow - Propriedade que define a largura do elemento em relação aos outros elementos do mesmo contenier. Caso tenha apenas um elemento, irá ocupar a largura toda, pois
+não há com quem ser comparado.
+flex-shrink - Define a proporção com que um item deve encolher caso seja necessário. Propriedade que aceita apenas valores positivos, sendo o valor padrão 1.
+
+display: grid | display: inline-grid- Para criação de um grid conteiner.
+grid-template-columns - Define a dimensão das colunas do grid.
+repeat() - O primeiro valor será o número de colunas que a grid será definida, e em seguida os tamanhos que irá possuir.
+grid-template-row - Propriedade que define a dimensão das linhas do grid.
+grid-column-start - Define a posição inicial e um item dentro da coluna do grid.
+grid-column-end -  Propriedade que define um elemento na posição final do grid dentro da coluna, contribuindo com uma linha, extensão ou nada, para seu posicionamento.
+grid-row-start | grid-row-end - Tem a mesma funcionalida porém será para os elementos que estão em linha. 
+z-index - Propriedade que específica a ordem de uma pilha de elementos que está sobrepondo outro, um elemento que estiver com o número maior na ordem de empilhamento será exibido à frente de outro.
+grid-template-areas | grid-area - Propriedade que específica o tamanho e a localização que o elemento irá ficar dentro de um grid.
+span - Para que um elemento utilize mais de uma célula, basta acrescentar span e o valor. 
+
+::first-letter - Seleciona a primeira letra da primeira linha de um bloco, desde que não seja precedida por outro conteúdo.
+:nth-child() - Seleciona elementos com base em suas posições em um grupo de elementos irmãos.
+:nth-of-type - Seleciona os elementos que correspondem a um type, baseado na posição entre o grupo de elementos.
+
+HSL: Hue Saturation Lightness - Hue é o espectro de cor sendo de 0 a 360, Saturation e Lightness irá de 0 a 100, Saturation no 0 fará com seja uma escala de cinza mesmo se for 
+alterado o hue, no caso se colocar próximo ao 100 será uma cor viva, intensa. Lightness será a luminosidade, partir dos 50% deixando mais para o branco ou para o preto.
+RGB: - Red, Green, Blue - Utilizando as cores vermelho, verde e azul em diferentes intesidades fazem com que seja criada outras cores. Escala utilizada uma númeração de 0 a 255, 
+sendo 0 a total da ausência da cor e 255 a intensidade máxima.
+Hexadecimal - Sendo um código iniciado por # consistindo em seis caracteres que podem ser letras e números, cada um dps caracteres do códigos será referente a intensidade de uma 
+cor no espectro RGB. Os dois primeiros referentes a vermelho, o terceiro e quarto referentes ao verde e os dois últimos ao azul. A intensidade é medida em uma escala de 00 a FF, 
+sendo 00 o tom mais escuro possível e o FF o mais claro.
+
+@media () - Para definir os critérios que será ou não aplicado para definir o que está dentro. 
+min-width | max-width - Define a largura mínima e máxima que o elemento irá possuir, e a partir de seu valor declarado será a resolução do elemento na página.
+orientation - Recurso de mídia que poderá ser utilizado para testar a orientação da janela de visualização.
+
+JS:
+
+https://www.w3schools.com/jsref/prop_node_nodetype.asp - Quais são as descrições dos valores do nodeType. 
+
+HTMLCollection - Representa um objeto semelhante a um array com elementos na ordem que esta declarado no HTML, oferecendo métodos e propriedades para selecioná-los. 
+HTMLElement - Representa os elementos de um documento em HTML, como body, table, form entre outros. 
+NodeList - É um objeto semelhante a um Array, porém são objetos retornados pelos métodos Node.
+
+createTextNode - Cria um nó de texto e auxilia na criação de um elemento DOM.
+cloneNode - Duplica um elemento node (nó), na estrutura de um documento DOM.
+nodeType - Propriedade de leitura de uma Node interface, sendo um número inteiro que identificando quais são os elementos representados por tags.
+node.Name - Propriedade que retorna o nome do elemento ou atributo que está sendo acessado a partir dessa propriedade. 
+nodeValue - Conjunto de propriedades que retorna o valor do elemento do elemento específicado, podendo alternar o valor. 
+
+innerHTML - Substitui todo o valor informado ao ser declarado em um elemento selecionado.
+innerText - Mostrará o texto associado ao valor do elemento.
+outerHTML - Tanto o conteúdo externo como interno será substituido o valor ao ser declarado. 
+insertAdjacentHTML - Analisa o texto e insere um valor que será em uma posição especificada.
+
+getElementById() - Função do JS que retorna um elemento do DOM, identificado por um ID específico.
+getElementsByTagName() - Método que retorna um HTMLCollection de elementos com o nome da tag fornecido. 
+getElementsByClassName() - Será uma lista do HTMLCollection de elementos encontrados a partir das classes.
+getElementByName() - Retorna uma coleção de elementos em uma NodeList, atualizando automaticamente com novos elementos com o mesmo nome 
+que são adicionados e removidos do documento. 
+getAttribute - Retorna um atributo que uma propriedade específica de um elemento, caso não possua o valor retornado será null ou uma string vazia. 
+getAttributeNode() - Retorna o atributo especificado do elemento acessado.
+createElement() - Cria um elemento HTML especificado.
+
+hasAttribute() - Propriedade que verifica se à um atributo no elemento. 
+setAttribute() - Adiciona um novo elemento ou modifica o valor de um atributo existente em um elemento específicado.
+removeAttribute() - Remove um atributo com o nome do local e o URI de namespace especifícados, caso o atributo removido tiver um valor padrão, será substituído.
+
+querySelector() - Retorna o elemento a partir de um ID. Recebendo a partir de um seletor. 
+('nome') - Seleciona uma Tag.
+('.nome') - Seleciona uma classe.
+('#nome') - Seleciona um ID.
+('[nome]') - Seleciona uma propriedade. 
+querySelectorAll() - Recebe um argumento de string contendo um seletor CSS e retorna um objeto NodeList representando os elementos do documento que correspondem  
+ao seletor.
+
+classList - Propriedade para leitura que retorna uma coleção DOMTokenList, sendo uma maneira de acessar a lista de elementos de uma classe declarada.
+add - Adiciona o token que estiver em ('') a lista de classes.
+remove - Remove o token que estiver em ('') a lista de classes.
+toggle - Método que remove caso tenha um token existente na lista, caso não exista será adicionado um novo.
+contains - Verifica se o elemento está contido ou não dentro da lista.
+length - Quantidade de classes que um elemento possui.
+
+dir() - Função do console do browser para obter a lista dos elementos de uma tag especificada, inspecionando as informações de 
+herança que o elemento contém.
+dataset - Retorna o nome do atributo sem o hífen - , sendo possível adicionar dados a elementos html como se fossem constantes. 
+htmlFor - Retorna ou define um valor do atributo for de um rótulo. O atributo for especifica a qual elemento de formulário um rótulo está vinculado.
+document.forms - Seleciona os formulários e será uma lista do HTMLCollection contendo os formulários que a página possui.
+document.nome - Retornará o elemento formulário que possui o nome que é informado após o ponto.
+
+parentNode - Retorna um parente de um elemento no caso o node parente do node referenciado.
+childNode - Retorna os textos herdados de um elemento.
+firstChild - Propriedade que retorna o primeiro texto.
+nextSibling - Retorna o texto seguinte ao especificado em childNodes.
+lastChild - Representa o último texto que é herdado do elemento declarado.
+previousSilbling - Retorna o textoelemento anterior. 
+children - Retorna uma coleção com todos os elementos que são herdados de um elemento HTML pelo qual é chamado. 
+firstElementChild - Propriedade que retorna o primeiro elemento.
+nextElementSibling - Retorna o elemento seguinte ao especificado em NodeList.
+previousElementSilbling - Retorna o elemento anterior.
+lastElementChild - Representa o último elemento que é herdado do elemento declarado.
+appendChild - Método fundamental usando o DOM, insere um novo nó na estrutura do DOM de um documento, podendo criar e adicionar elementos. 
+removeChild - remove um nó filho do elemento DOM.
+insertBefore - Insere um nó antes do nó referenciado.
+
+window.location.href - Será uma string com a URL completa do site atual.
+style.cursor - Específica o cursor do mouse quando o ponteiro está sobre um elemento.
+style.position - Referencia o posicionamento do elemento. 
+
+onclick - Executa determinada funcionalidade quando um botão do mouse é clicado.
+onmousemove - Evento que ocorre semmpre que o ponteiro do mouse se movimentar dentro de um elemento div.
+ondragstart - Será acionado o evento quando o usuário começa a arrastar os elementos. 
+ondragover - Ocorre quando o elemento é arrastado sobre o lugar alvo.
+ondrop - Ocorre quando o usuário termina de arrastar o elemento e é solto sobre o destino.
+onsubmit - Evento utilizado para submeter o formulário, quando é clicado algum botão direcionado a submit. Podendo executar uma ou mais functions fazendo
+as validações que forem nescessárias.
+onkeydown - Evento que será disparado ao usuário clicar.
+onkeypress - Evento que não é disparado em teclas que não geram caracteres
+onkeyup - Evento que é disparado quando a tecla é largada e o seu input adicionado/registrado no DOM. No caso de um input o novo caractere é inserido e não dá para cancelar, ou seja um input receberá o caractere.
+
+draggable - Representação de elementos arrastáveis, seguem o ponteiro do mouse durante a operação drag (arrastar).
+dataTransfer.setData - O objeto dataTransfer será utilizado para guardar os dados que estão sendo arrastados durante uma operação de Drag and Drop.
+
+preventDefault - Cancela o evento caso seja cancelável, sem parar a propagação do mesmo. Evitando o comportamento padrão de um elemento.
+e.target - Propriedade a qual mencionada faz a referência ao objeto para qual evento foi enviado. 
+formData() - É criado um novo objeto formData.
+formData.append - Acrescenta um novo valor em uma chave existente dentro de um objeto formData, ou adiciona a chave se ela ainda não existir.
+formData.get - Retorna o primeiro valor associado com uma chave dada dentro de um objeto formData.
+formData.has - Retorna um valor boleano indicando se um objeto formData contém um certo par chave/valor.
