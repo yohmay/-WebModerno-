@@ -1,0 +1,172 @@
+Tecla Windows + R e digitar cmd - Prompt de comando
+Prompt de comando -> code --version - Ver a versão do VSCode.
+code .cursoUdemy - para abrir pastas pelo Prompt
+ 
+
+Ctrl+Shift+P - Pesquisas no VSCode 
+Ctrl+Alt+N - Executa o código. 
+Ctrl+S - Salva os arquivos.
+Ctrl+B - Minimiza Barra Explorer
+Alt+Shift+Seta - Para duplicar linhas.
+
+
+Browser
+Window - É um escopo global (objeto).
+this - Window
+.onhashchange - Evento que será disparado quando uma determinada parte do link muda. Chamando uma determinada função para ser executada.
+
+
+Node.js - VsCode
+this. - É utilizado para exportar o modulo para fora do arquivo
+global - Representa o window no nodejs, mas precisa ser declarado.
+module.exports. - É a mesma função de this.
+
+
+Typeof - É o tipo do valor.
+Number - Números.
+String - É uma sequência de caracteres utilizando letras ou números, ao utilizar uma string terá que
+colocar dentro de "" ou ''.
+// ou em Múltiplas Linhas /* */  - Realizar comentário em JS
+console.log("Escreva o que será mostrado no terminal"); - Executará no Terminal ou no Browser.
+console.time() - Contador utilizado para monitoração de quanto tempo uma operação é executada. 
+console.timeEnd() - Interrompe um temporizador que anteriormente foi iniciado com console.time().
+Aspas duplas - " " 
+Aspas simples - ' '
+Crase - ´ ´ - para usar crase deve estar fazendo tamplate string, que são strings que permitem expressões embutidas 
+pode utilizar string multi-linhas e interpolação de string com elas.
+
+
+Number.isInteger - Para verificar se o número é inteiro utilize .
+.toFixed - Para diminuir as casas decimais e ter um controle sobre, basta acrescentar após a variável.
+.toString - Para converter um valor para String.
+.toString(2) -  Para converter o valor em número binário
+
+
+.charAt() - Resultará a letra da string conforme o número informado no ().
+.charCodeAt - Código relacionado a tabela ASCII ou Unicode, com relação ao índice informado no ().
+.indexOf() - Índice informado se houver o valor associado a ele na string.
+.substring() - Mostrará o restante da string informada a partir do valor no (). 
+.replace(3, "e") - para substituir conforme alteração entre ().
+.split(",") - Gera um array sobre a string, ao utilizar entre () é informado o separados do conteúdo informado 
+no código.
+
+
+Math.PI - Calcula a circunferência de um círculo com um dado raio.
+Math.pow - Realiza um calculo de uma potência.
+Math.sqrt - Retorna a raiz quadrada do número que for determinado a frente. 
+% - (Resto da divisão) É um valor operando por % 2.
+
+
+[ ] - Para iniciar um array.
+delete - Para excluir elementos.
+.push - Para adicionar outros elementos.
+.pop() - Remove o último elemento.
+.shift() - Remove o primeiro elemento.
+.length - Para verificar quantos elementos tem no array.
+.slice() - Cria um novo array a partir do índice mencionado entre parênteses.
+.reverse() - Método que inverte os itens de um array, o primeiro elemento do array se torna o último e o último 
+.sort() - Função que deixará o array em ordem crescente ou alfabetica. 
+.splice() - Função que adiciona elementos a um determinado índice. E para remover um elemento de um determinado índice.
+Sendo que o primeiro parâmetro é o índice, o segundo a quantidade de elementos que será excluido, e o terceiro a 
+quantidade de elementos que você quer acrescentar.
+.map() - receberá pares de chave-valor e lembra a ordem original da inserção das chaves.
+.forEach() - É uma função de um array, que passa como parâmetro para o elemento do array ao qual está percorrendo
+e o outro parâmetro que está na função. Será também o armazenar, o registrar do callback. (código, sem utilizar o
+Browser).
+.filter() - É uma função que irá filtrar os elementos de um array, em cima de um determinado critério, é uma função
+do callback que irá retornar true ou false, se a função retornar true, significa que o elemento será adicionado ao 
+array que está sendo gerado, se for retornado false não será adicionado o elemento.
+
+
+{} - Para escrever um objeto.
+this.nome - Pode tornar a função pública, pode atribuir para instanciar Obj.
+Object.keys - Todas as chaves que compoem o Objeto.
+Object.values - Todos os valores que está compondo um Objeto.
+Object.entries  - Um array externo que compoem um array para cada chave/valor. Podendo utilizar o forEach para 
+percorrer o array, por exemplo: Object.entries(pessoa).forEach( e => {});
+Object.defineProperty() - Para criar e definir uma propiedade, é possível inserir um objeto para declarar as
+características da propriedade, como:
+Enumerable: Para listar ou não essa propriedade.
+Writable: Para modificar ou não.
+Value: Sendo possível atribuir um valor.
+Object.assing - Funcionalidade que começou no ECMAScript 2015, é possível criar um objeto com o objetivo de ser o
+destino de outros objetos, sendo que todos os objetos declarados após o primeiro será concatenado todos os atributos
+no primeiro.
+Object.freeze - Congelamento dos dados do objeto, isso faz com que não seja alterado.
+Object.preventExtensions - Previne que o Objeto não seja estendido, ou seja não será possível aumentar o número
+de atributos, apenas excluir atributos.
+Object.isExtensible - Teste para verificar se o Objeto é criado com o Object.preventExtensions.
+Todos os Objetos criados a partir de uma mesma função construtora, tem o mesmo protótipo, a partir do atributo
+__proto__.
+
+constructor() - Para transformar a classe em uma função construtora.
+.has() - Função que verifica se o elemento está ou não contido no map.
+.size() - Informa quantos elementos o map possui.
+.setTimeout() - Recebe uma função como parâmetro, e também um tempo para começar a executar essa função.
+.setInterval() - Será o intevalo entre as execuções. 
+.random() - Mostrará os números aleatórios declarado em parênteses.
+.newDate(0): É uma data de referência do dia 01/01/1970. 
+.getTime(): retorna o valor numérico correspondente ao horário da data especificada de acordo com o horário universal.
+.entries(): Retorna um array dos prórprios pares de chave/valor, na mesma ordem dos objetos providos atráves do loop.
+.keys(): Retorna um array de propriedades enumeraveis de um determinado objeto.
+.then() - Retorna uma promise, possuindo dois argumentos, ambos sendo callback sendo uma para promise comprida e outro
+para promise rejeitada.
+.catch - Retorna a promise rejeitada podendo possuir uma mensagem ao usuário.
+
+E ou AND - &&
+OU - ||
+Negação ou NOT - !
+
+
+Postfix - n++ : Depois do operando
+Prefix - ++n : Antes do operando
+Infix - n + n1 : Quando opera entre os dois. Tem um operador uma sintaxe Infix e outro operador.
+Unário Mais + (Unary plus) que converte um operando em um número.
+Unário Menos - (Unary minus) que converte um operando em um número e nega o valor depois dele.
+Incremento prefixo e sufixo ++ que adiciona um ao seu operando.
+Decremento prefixo e sufixo -- que subtrai um do seu operando.
+
+
+Operador (==): Este operador é usado para verificar se os dois operandos fornecidos são iguais ou não. 
+Operador (===): Este operador é usado para verificar se os dois operandos fornecidos são iguais ou não. Uma comparação 
+estrita é válida se os operandos forem do mesmo tipo e se o conteúdo de ambos corresponderem.
+Operador (!=): Este operador é usado para verificar se os dois operandos fornecidos são iguais ou não. 
+Operador (!==): Retorna verdadeiro caso os operandos não sejam iguais e/ou não sejam do mesmo tipo.
+Operador (>): verifica se o primeiro operando é maior que o segundo operando ou não.
+Operador (>): verifica se o primeiro operando é maior que o segundo operando ou não.
+Operador (>=): verifica se o primeiro operando é maior ou igual ao segundo operando ou não.
+Operador (>=): verifica se o primeiro operando é maior ou igual ao segundo operando ou não.
+. A melhor com comparação para verificar se os dois operandos fornecidos são iguais é o ===, devido ser uma comparação 
+mais precisa, mesmo sendo os mesmos valores a comparação também vale para tipos. Pois poderá haver valores iguais de
+diferentes tipos.
+
+
+- Valores Booleanos: 
+. Tipos de valores verdadeiro. Exemplo:                 . Tipos de valores falso. Exemplo:
+console.log("Os Verdadeiros");                          console.log("Os Falsos");
+console.log(!!3);                                       console.log(!!0);
+console.log(!!-1);                                      console.log(!!'');
+console.log(!!"teste");                                 console.log(!!null);
+console.log(!![]);                                      console.log(!!NaN);
+console.log(!!{});                                      console.log(!!undefined);
+console.log(!!Infinity);                                console.log(!!(isAtivo = false));
+console.log(!!(isAtivo = true));
+
+. Para informar o valor verdadeiro ou falso é preciso digitar: !!
+. Para transformar um valor em verdadeiro ou falso é utilizado: !
+
+
+TRY - Bloco de código, que informar códigos que possivelmente irão ter erros.
+CATCH - É um bloco que analisa o que está dentro do try e dentro dele, é possível tratar o erro ou não.
+THROW - É utilizado para lançar o erro com alguma mensagem.
+FINALLY - Mostra ao final, tratando ou não o erro. 
+
+
+JSON.stringify() - Mostrará o formato textual que está no código, sendo um formato de dados, isso fará com que
+não mostre funções.
+. Possibilidades que o JSON suporta o formato: Json.parse()
+Valor númerico: Não é necessário utilizar aspas.
+String: Utilizando aspas duplas.
+Valores Booleanos: Utilizando aspas duplas ou literalmente.
+Objeto: Não é necessário utilizar aspas. // Se houver atributos as strings deverão ter aspas duplas.
+Array: Não é necessário utilizar aspas.
